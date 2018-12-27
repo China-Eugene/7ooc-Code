@@ -1,0 +1,377 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+DIY无后端导航栏：1.0版本
+开发人员：Eugene
+个人Blog：www.7ooc.cn
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="简洁的个人导航页，可以DIY导航页的背景图和标题！By Eugene" />
+    <meta name="keywords" content="导航页,DIY导航页,简洁导航页,个人导航页,DIY搜索页,二次元导航页"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简洁的个人导航页_DIY导航页,百度搜素</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/basic.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/link.js"></script>
+    <script src="js/background.js"></script>
+    <script>
+    
+    </script>
+</head>
+
+<body>
+    <div id="wallpaper"></div>
+    <div id="set" onclick="openset()">设置</div>
+    <div id="menu" class="close">
+        <div class="items">
+            <span class="item">显示时间：</span>
+            <div class="btn">
+                <div id="b1" class="b1 on-b1" onclick="opentime()">
+                    <div id="b2" class="b2 on-b2"></div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin:10px">
+        <div class="items">
+            <span class="item">自定义标题：</span>
+            <div class="btn">
+                <div id="b3" class="b1 off-b1" onclick="opentitle()">
+                    <div id="b4" class="b2 off-b2"></div>
+                </div>
+            </div> 
+            <input type="text" id="titletext" class="titletext" oninput="out_title()" >
+        </div>
+        <hr style="margin:10px">
+        <div class="items">
+            <span class="item">图片背景：</span>
+            <input type="file" id="imgfile" style="display:none;" >
+            <input type="button" class="imgfile" onclick="outimg()" value="选择图片">
+            <input type="button" class="imgfile" onclick="setimg()" value="确定使用">
+        </div>
+    </div>
+    <p id="title"></p>
+    <div id="time" class="open">
+        <span id="time1"></span>
+        <span id="time4"></span>
+        <span id="time2"></span>
+        <span id="time5"></span>
+        <span id="time3"></span>
+    </div>
+    
+    <div id="searchbox">
+        <input type="text" id="textbox" autofocus placeholder="请在此处输入搜索内容！">
+        <input type="button" id="searchbtn" onclick="search()">
+        <footer id="footer">
+            <p class="copyright">© Copyright 2018 - 2020 Eugene. All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

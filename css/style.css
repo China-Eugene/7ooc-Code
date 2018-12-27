@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0; 
+   }
+   html,body{
+       -webkit-user-select:none;
+       -moz-user-select:none;
+       -ms-user-select:none;
+       user-select:none;
+       font-family:Microsoft YaHei;
+       height:100%;
+   }
+   #set{
+       width: 50px;
+       height: 50px;
+       background-color: rgba(65, 65, 65, 0.582);
+       color: white;
+       text-shadow: 2px 2px 2px black;
+       border-radius: 50px;
+       line-height: 50px;
+       cursor: pointer;
+       text-align: center;
+       position: absolute;
+       right: 18px;
+       top: 18px;
+       transition: 100ms;
+   }
+   #set:hover{
+       width: 60px;
+       height: 60px;
+       line-height: 60px;
+       right: 13px;
+       top: 13px;
+       
+   }
+   #menu{
+       position: absolute;
+       background-color: rgba(44, 44, 44,.9);
+       color: white;
+       left: 20%;
+       right: 20%;
+       height: 500px;
+       top: -500px;
+       transition: 800ms;
+       cursor: default;
+       z-index: 40;
+   }
+   #title{
+       text-align: center;
+       color: white;
+       font-size: 60px;
+       width: 1024px;
+       height: 100px;
+       position: absolute;
+       left:50%;
+       top:50%;
+       margin-left:-512px;
+       text-shadow: 2px 2px 2px rgb(0, 0, 0);
+       z-index: 20;
+       cursor: default;
+       margin-top: -250px;
+       font-weight:normal;
+       overflow:hidden;
+   }
+   .none{
+       display: none;
+   }
+   #time{
+       text-align: center;
+       color: white;
+       font-size: 54px;
+       width: 640px;
+       height: 40px;
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       margin-left: -320px;
+       margin-top: -150px;
+       text-shadow: 2px 2px 2px rgb(0, 0, 0);
+       z-index: 20;
+       cursor: default;
+       transition: 600ms;
+   }
+   #wallpaper{
+       z-index: 10;
+       width: 100%;
+       height: 1000px;
+       background-image: url("https://api.ixiaowai.cn/api/api.php");
+       background-attachment: fixed;
+       background-position: 100% 100%;
+       height: 100%;
+   }
+   #searchbox{
+       width: 640px;
+       height: 40px;
+       position: absolute;
+       left:50%;
+       top:55%;
+       margin-left:-320px;
+       margin-top:-100px;
+       z-index: 9;
+       background-color: rgba(0, 0, 0, 0);
+   }
+   #textbox{
+       width: 536px;
+       height: 38px;
+       margin: 0 auto;
+       font-size: 20px;
+       line-height: 36px;
+       border: 1px solid rgb(255, 255, 255);
+       box-shadow: 4px 4px 10px 1px rgb(20, 20, 20);
+       color: black;
+       text-shadow: 2px 2px 2px white;
+       background-color: rgba(0, 0, 0, 0);
+       outline:none;
+   }
+   #searchbtn{
+       outline:none;
+       cursor: pointer;
+       width: 100px;
+       height: 40px;
+       line-height: 40px;
+       box-shadow: none;
+       text-align: center;
+       color: white;
+       float: right;
+       background-image: url('../img/search.png');
+       background-color: rgba(0, 0, 0, 0);
+       border:none;
+       box-shadow: 4px 4px 10px 1px rgb(20, 20, 20);
+   }
+   .btn{
+       width: 46px;
+       height: 26px;
+       display:inline-block;
+       top: 15%;
+       position: relative;
+   }
+   .b1{
+       background-color: rgba(255, 255, 255, 1);
+       width: 46px;
+       height: 26px;
+       background-position: center;
+       border-style:none;
+       cursor: pointer;
+       background-size:100% 100%;
+       transition: 600ms;
+       border-radius: 15px;
+   }
+   .b2{
+       width: 24px;
+       height: 24px;
+       background-color: rgb(255, 255, 255);
+       border-radius: 24px;
+       position: relative;
+       transition: 600ms;
+       top: 1px;
+   }
+   .on-b1{
+       background-color: rgb(75, 215, 99)!important;
+   }
+   .off-b1{
+       background-color: rgb(255, 255, 255);
+   }
+   .on-b2{
+       left: 20px;
+       box-shadow: -1px 1px  rgb(58, 58, 58);
+   }
+   .off-b2{
+       left: 1px;
+       box-shadow: 1px 1px  rgb(58, 58, 58);
+   }
+   .items{
+       margin: 10px;
+       height: 35px;
+       width: 100%;
+   }
+   .item{
+       display:inline-block;
+       line-height: 35px;
+   }
+   .titletext{
+       width: 200px;
+       height: 24px;
+       margin: 0 auto;
+       font-size: 15px;
+       line-height: 24px;
+       outline:none;
+       border: none;
+       display: none;
+       position: relative;
+       top: -3px;
+       left: 25px;
+   }
+   .imgfile{
+       background-color: rgba(255, 255, 255, 1);
+       width: 70px;
+       height: 26px;
+       background-position: center;
+       border:none;
+       cursor: pointer;
+       background-size:100% 100%;
+       transition: 600ms;
+       border-radius: 15px;
+       outline: none;
+   }
+    #footer {
+    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 28rem;
+    text-align: center;
+}
+   #footer .copyright {
+	letter-spacing: 0.2rem;
+	font-size: 0.6rem;
+	opacity: 0.75;
+	margin-bottom: 0;
+}
